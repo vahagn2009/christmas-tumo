@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3976da977cb49238499ea3b4c237ae, type: 3}
+  m_Name: ProfileDataSourceSettings
+  m_EditorClassIdentifier: 
+  profileGroupTypes:
+  - m_GroupTypePrefix: Built-In
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+    - m_Suffix: LoadPath
+      m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+  - m_GroupTypePrefix: Editor Hosted
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: ServerData/[BuildTarget]
+    - m_Suffix: LoadPath
+      m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+  - m_GroupTypePrefix: Automatic
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/ManagedEnvironment/ManagedBucket/ManagedBadge
+    - m_Suffix: LoadPath
+      m_Value: https://80f91ff6-0e8e-4b92-b49f-d623662b651a.client-api.unity3dusercontent.com/client_api/v1/environments/{CcdManager.EnvironmentName}/buckets/{CcdManager.BucketId}/release_by_badge/{CcdManager.Badge}/entry_by_path/content/?path=
+  - m_GroupTypePrefix: CCD.80f91ff6-0e8e-4b92-b49f-d623662b651a.1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d.f1f87834-3bbc-4f51-9e64-3c3a4b1b6230.latest
+    m_Variables:
+    - m_Suffix: CcdBucketName
+      m_Value: Android
+    - m_Suffix: CcdBucketId
+      m_Value: f1f87834-3bbc-4f51-9e64-3c3a4b1b6230
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: PromoteOnly
+      m_Value: False
+    - m_Suffix: Environmentname
+      m_Value: dev
+    - m_Suffix: Environmentid
+      m_Value: 1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d/f1f87834-3bbc-4f51-9e64-3c3a4b1b6230/latest
+    - m_Suffix: LoadPath
+      m_Value: https://80f91ff6-0e8e-4b92-b49f-d623662b651a.client-api.unity3dusercontent.com/client_api/v1/environments/dev/buckets/f1f87834-3bbc-4f51-9e64-3c3a4b1b6230/release_by_badge/latest/entry_by_path/content/?path=
+  - m_GroupTypePrefix: CCD.80f91ff6-0e8e-4b92-b49f-d623662b651a.1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d.c0a19f2b-43d3-462f-938c-3afc53e3eebf.latest
+    m_Variables:
+    - m_Suffix: CcdBucketName
+      m_Value: iOS
+    - m_Suffix: CcdBucketId
+      m_Value: c0a19f2b-43d3-462f-938c-3afc53e3eebf
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: PromoteOnly
+      m_Value: False
+    - m_Suffix: Environmentname
+      m_Value: dev
+    - m_Suffix: Environmentid
+      m_Value: 1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d/c0a19f2b-43d3-462f-938c-3afc53e3eebf/latest
+    - m_Suffix: LoadPath
+      m_Value: https://80f91ff6-0e8e-4b92-b49f-d623662b651a.client-api.unity3dusercontent.com/client_api/v1/environments/dev/buckets/c0a19f2b-43d3-462f-938c-3afc53e3eebf/release_by_badge/latest/entry_by_path/content/?path=
+  environments:
+  - id: 15a6298d-d1f5-4d6c-84d9-72d66c3adf6b
+    projectId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    projectGenesisId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    name: production
+    isDefault: 1
+  - id: 1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d
+    projectId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    projectGenesisId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    name: dev
+    isDefault: 0
+  currentEnvironment:
+    id: 1ae72c39-261c-4ea2-9bd4-89b6a1bcb45d
+    projectId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    projectGenesisId: 80f91ff6-0e8e-4b92-b49f-d623662b651a
+    name: dev
+    isDefault: 0
